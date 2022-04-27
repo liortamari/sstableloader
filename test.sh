@@ -31,7 +31,7 @@ done
 echo "STARTING"
 
 cql "\
-  CREATE KEYSPACE music WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 3};"
+  CREATE KEYSPACE music WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};"
 
 cql "\
   CREATE TABLE music.songs (\
